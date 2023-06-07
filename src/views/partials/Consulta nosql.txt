@@ -1,0 +1,64 @@
+/*
+    let newUser = await User.create({
+     name:{firstName: 'Monaliza', lastName: 'Fernandes'},
+     email: 'mona@pais.org',
+     age: 15,
+     interests: ['artes', 'Pizza']
+    });
+
+    */
+   /*
+    let newUser = new User();
+    newUser.name = { firstName: 'Andre', lastName: 'Soares'};
+    newUser.email = 'andre@gmail.com'
+    newUser.age = 20
+    newUser.interests = ['Futebol']
+    let resultado = await newUser.save();
+
+    console.log("NONO USUARIO: ", resultado);
+    */
+   /*
+    let usuarios = await User.findOne({
+        email: 'fulano@gmail.com', 
+    })
+    */
+   /*
+    //let usuarios = await User.findById('6460dc8bddeb1372ae70f8f7')
+    let usuarios = await User.find({
+        email: 'profissao33@gmail.com',
+        age: 10
+    })
+    */
+/*
+    let usuarios = await User.find({
+       'name.firstName':'Thiago'
+    }) 
+*/
+/*
+   let usuarios = await User.find({
+       imterests: "tecnologia"
+   });
+*/
+/*
+let usuarios = await User.find({
+    age: {$gt: 18} // Greater =  maior
+})
+*/
+
+
+/*
+    get = Greater = Maior
+    gte = Greater Than or Equal= maior ou igual
+    lt = Lower Than = Abaixo
+*/
+  /*
+   let  usuarios = await User.find({
+     age: {$gt: 18}
+   }).sort({age: 1});
+   */
+  /*
+   let usuarios = await User.find({
+      age: {$gt: 18}
+   }).skip(0).limit(2) // pula registro de papgina
+  */
+    //console.log("USUÁRIOS", users);
